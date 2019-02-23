@@ -1,0 +1,114 @@
+body {
+    margin: 0;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    filter: brightness(110%);
+}
+
+$s1:"";
+$s2:"";
+$s3:"";
+
+@for $i from 1 through 300 {
+    $s1: $s1 + random(1000)*0.1vw + " "+ random(1000)*0.2vh + " "+ 0 + " "+ random(50)*-0.01rem + #fff;
+    $s2: $s2 + random(1000)*0.1vw + " "+ random(1000)*0.2vh + " "+ 0 + " "+ random(50)*-0.01rem + #fff;
+    $s3: $s3 + random(1000)*0.1vw + " "+ random(1000)*0.2vh + " "+ 0 + " "+ random(50)*-0.01rem + #fff;
+
+    @if $i < 300 {
+        $s1: $s1 + ",";
+        $s2: $s2 + ",";
+        $s3: $s3 + ",";
+    }
+}
+
+.snow {
+    border-radius: 50%;
+    opacity: 0.8;
+    position: absolute;
+    top: -200vh;
+    animation-name: fall;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.layer1 {
+    width: 0.8rem;
+    height: 0.8rem;
+    filter: blur(2px);
+    box-shadow: #{$s1};
+    animation-duration: 48s;
+}
+
+.layer1.a {
+    animation-delay: -24s;
+}
+
+.layer2 {
+    width: 0.6rem;
+    height: 0.6rem;
+    filter: blur(3.5px);
+    box-shadow: #{$s2};
+    animation-duration: 64s;
+}
+
+.layer2.a {
+    animation-delay: -32s;
+}
+
+.layer3 {
+    width: 0.4rem;
+    height: 0.4rem;
+    filter: blur(6px);
+    box-shadow: #{$s3};
+    animation-duration: 80s;
+}
+
+.layer3.a {
+    animation-delay: -40s;
+}
+
+@keyframes fall {
+    100% {
+        transform: translateY(400vh);
+    }
+}
+
+.wrapper {
+    height: auto;
+    perspective: 1px;
+    transform-style: preserve-3d;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.snow-wrapper {
+    height: 350vh;
+    background: radial-gradient(farthest-corner at 30vw 20vh, #7397a1 1%, #3f2c41 100%);
+    transform-style: preserve-3d;
+    z-index: -1;
+}
+
+.parallax-wrapper {
+    opacity: 0.9;
+    z-index: 1;
+    background: #aaa;
+    padding: 5vh 5vw;
+    top: 50vh;
+    position: absolute;
+    transform: translateZ(-1px) scale(2);
+}
+.content-wrapper {
+    opacity: 0.9;
+    z-index: 1;
+    background: #aaa;
+    padding: 5vh 5vw;
+    top: 200vh;
+    position: absolute;
+    transform: translateZ(-1px) scale(2);
+}
+.content {
+    margin: 0 auto;
+    padding: 50px;
+    width: 50%;
+}
