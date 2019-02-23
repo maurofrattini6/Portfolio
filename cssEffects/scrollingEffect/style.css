@@ -1,0 +1,48 @@
+html {
+    overflow: hidden;
+}
+body {
+    margin: 0;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    height: 100vh;
+    perspective: 1px;
+    transform-style: preserve-3d;
+    overflow-x:hidden;
+    overflow-y:auto;
+}
+.parallax-wrapper {
+    width: 100vw;
+    height:100vh;
+    padding-top:20vh;
+    box-sizing: border-box;
+    transform-style: preserve-3d;
+}
+.parallax-wrapper::before {
+    content:"";
+    width: 100vw;
+    height: 100vh;
+    top:0;
+    left:0;
+    background-image: radial-gradient(circle, #d84699, #bd4c9f, #a050a0, #84539c, 
+    #6a5394, #585c9a, #45649d, #346a9c, #157da8, #0090af, #10a2af, #3eb3ac);
+    position: absolute;
+    z-index: -1;
+    transform:translateZ(-1px) scale(2);
+}
+.regular-wrapper {
+    width: 100vw;
+    height:100vh;
+    padding-top:20vh;
+    background-image: radial-gradient(circle, #3eb3ac, #10a2af, #0090af, #157da8, 
+    #346a9c, #45649d, #585c9a, #6a5394, #84539c, #a050a0, #bd4c9f, #d84699);   
+    z-index: 1;
+    position: relative;
+}
+.content {
+    margin: 0 auto;
+    padding: 50px;
+    width: 50%;
+    background: #aaa;
+}
