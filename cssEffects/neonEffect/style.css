@@ -1,0 +1,80 @@
+.navbar {
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    top: 0px;
+    left: 0px;
+    opacity: 1;
+    font-size: 20px;
+    font-family: 'Avenir Next', Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: black;
+    background: url(https://lh3.googleusercontent.com/-aDLZgS0LZR3gZ3l_dxYbcYwCF2LeIx2Tykxw4J63gNYX9LdkvFp5lEjR5874Hq-NtXmo7qGJnurAm47j47GY7Ev2bnVlEBNmr9qtlzgSnAnvMEvzpZfNcGeQiqNxqc3WzoHSVDynblGRTKojCZ_cum52qKJ6g6Q53pRQEW4Vsjys7G9xeq_TZblQesvmd4Yp3ZJibfBftjBdIjqLVxL6WwI9f9cHK76ApsjVqy98veLCRC9VaKehmxPfk_ERj6c02yKkzYSowk2DB2rFqd0v7HBmE-MUlZ7-EaRsNt8MmgMuFP_rL0NKDGa_0IoXvKLvou6H95Tf-3cLmcPfXBgFnMvTpMwLSX1ps8kHFknF9UtmDyUhugaKagxQtMLCSHuhhUrW9LQyhrQq17qsuYcg5WMZ4K5APUH8Mf9uzR1Dgxj0WjB8EGk9O9TvZTog_JG0Yu9p15Xl5l3tA01jaSw8HrHW4SSZE3S0vxvLC7MNVV1HFIRjbIP1CXiGFmD-F863AsL8btoB5gNltNL385K2i_tZxdPZ1frQveHE82chdL8xrvqcCa25tWbwQNl1G_9GhFqWt-tRELK8XZhQMq24FTI1o1N7EwjpOqlhsKyc0qmFUyiHMcqM3QwB3BAmMLtLgbDhN9ciklIhAyCzMxoFZ-ZTE9Y_Q=w1366-h1356-no) lightgray 20px no-repeat;
+    background-position: right;
+    background-size: 40px;
+    z-index: 1;
+}
+
+.navbar span {
+    position: relative;
+    top: 10px;
+}
+
+.wrapper {
+    height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: black;
+}
+
+.text {
+    color: white;
+    background: black;
+
+    font-family: 'Avenir Next'Arial, Helvetica, sans-serif;
+    font-size: 100px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.text::before {
+    content: "hello moe!";
+    position: absolute;
+    mix-blend-mode: difference;
+    filter: blur(1.5px);
+
+}
+
+.neon-wrapper {
+    display: inline-flex;
+    filter: brightness(200%);
+    overflow: hidden;
+}
+
+.gradient {
+    background: linear-gradient(114.49912263910255deg, rgba(224, 247, 135, 1) 6.285540211210398%, rgba(78, 227, 250, 1) 95.23761169780666%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    mix-blend-mode: multiply;
+}
+
+.dodge {
+    background: radial-gradient(circle, white, black 35%) 65% 25%;
+    position: absolute;
+    top: -100%;
+    left: -100%;
+    right: 0;
+    bottom: 0;
+    mix-blend-mode: color-dodge;
+    animation: dodge-area 3s linear infinite;
+}
+
+@keyframes dodge-area {
+    to {
+        transform: translate(50%, 50%);
+    }
+}
