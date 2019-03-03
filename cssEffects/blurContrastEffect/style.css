@@ -12,7 +12,7 @@
     background: url(https://lh3.googleusercontent.com/-aDLZgS0LZR3gZ3l_dxYbcYwCF2LeIx2Tykxw4J63gNYX9LdkvFp5lEjR5874Hq-NtXmo7qGJnurAm47j47GY7Ev2bnVlEBNmr9qtlzgSnAnvMEvzpZfNcGeQiqNxqc3WzoHSVDynblGRTKojCZ_cum52qKJ6g6Q53pRQEW4Vsjys7G9xeq_TZblQesvmd4Yp3ZJibfBftjBdIjqLVxL6WwI9f9cHK76ApsjVqy98veLCRC9VaKehmxPfk_ERj6c02yKkzYSowk2DB2rFqd0v7HBmE-MUlZ7-EaRsNt8MmgMuFP_rL0NKDGa_0IoXvKLvou6H95Tf-3cLmcPfXBgFnMvTpMwLSX1ps8kHFknF9UtmDyUhugaKagxQtMLCSHuhhUrW9LQyhrQq17qsuYcg5WMZ4K5APUH8Mf9uzR1Dgxj0WjB8EGk9O9TvZTog_JG0Yu9p15Xl5l3tA01jaSw8HrHW4SSZE3S0vxvLC7MNVV1HFIRjbIP1CXiGFmD-F863AsL8btoB5gNltNL385K2i_tZxdPZ1frQveHE82chdL8xrvqcCa25tWbwQNl1G_9GhFqWt-tRELK8XZhQMq24FTI1o1N7EwjpOqlhsKyc0qmFUyiHMcqM3QwB3BAmMLtLgbDhN9ciklIhAyCzMxoFZ-ZTE9Y_Q=w1366-h1356-no) lightgray 20px no-repeat;
     background-size: 40px;
     background-position: right;
-    z-index: 1;
+    z-index: 0;
 }
 .navbar span{
     position: relative;
