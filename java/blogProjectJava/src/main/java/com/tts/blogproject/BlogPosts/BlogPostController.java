@@ -1,7 +1,7 @@
 package com.tts.blogproject.BlogPosts;
 
 import java.util.*;
-import org.springframework.beans.factory.annotation.Autowired;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
@@ -28,8 +28,9 @@ public class BlogPostController {
         }
     @GetMapping(value = "/")
     public String index(BlogPost blogPost, Model model) {
+        mirrorDB();
         model.addAttribute("posts", posts);
-        return "index";
+        return "mainBlog";
     }
 
     @GetMapping(value = "/blog_posts/{id}/edit")

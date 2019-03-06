@@ -1,11 +1,9 @@
 package com.tts.blogproject.BlogPosts;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Entity
+@Table(name = "blog_post")
 public class BlogPost {
     //sets Id as primary key
     @Id
