@@ -30,7 +30,7 @@ public class BlogPostController {
     public String index(BlogPost blogPost, Model model) {
         mirrorDB();
         model.addAttribute("posts", posts);
-        return "mainBlog";
+        return "index";
     }
 
     @GetMapping(value = "/blog_posts/{id}/edit")
