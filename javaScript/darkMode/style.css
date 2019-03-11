@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Avenir Next',sans-serif;
+    font-size: 20px;
+}
+section{
+    height: 100vh;
+    background: rgb(199, 199, 199);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+svg{
+    cursor: pointer;
+    width: 100px;
+    height: 100px;
+}
+.moon{
+    opacity: 0;
+}
+.light{
+    color: rgb(22,22,22);
+    transform: translateY(-180px);
+}
+.dark{
+    color: rgb(199,199,199);
+   
+}
