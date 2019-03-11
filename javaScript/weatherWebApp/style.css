@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(to top, #0f0f5b, #181f70, #202f85,
+        #26409b, #2c51b1, #1867c2, #007dd1, #0392dd, #3faddf, #73c5e0,
+        #a7dce4, #d9f0ef);
+    font-family: 'Avenir Next',sans-serif;
+    color:whitesmoke;
+}
+.location, .temp{
+    height: 30vh;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.temp{
+    flex-direction: column;
+}
+.degree-section{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.degree-section span{
+    margin: 10px;
+    font-size: 30px
+}
+.degree-section h2{
+    font-size: 40px;
+}
